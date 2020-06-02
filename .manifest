@@ -1,0 +1,18 @@
+{
+	"platforms": ["web"],
+	"properties": {
+		"author": {
+			"name": "PureQML Team",
+			"email": "team@pureqml.com",
+			"organization": "PureQML",
+			"site": "https://pureqml.com"
+		},
+		"title": "fireplace",
+		"domain": "com.pureqml.mosaicdemo",
+		"resolutionWidth": 1280,
+		"virtual.width": 1280,
+		"resolutionHeight": 720,
+		"virtual.height": 720
+	},
+	"templater": "jinja2"
+}
