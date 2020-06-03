@@ -4,3 +4,9 @@
 [submodule "controls"]
 	path = controls
 	url = git@github.com:pureqml/controls.git
+[submodule "qmlcore-tv"]
+	path = qmlcore-tv
+	url = git@github.com:pureqml/qmlcore-tv.git
+[submodule "smart-tv-deployer"]
+	path = smart-tv-deployer
+	url = git@github.com:comrat/smart-tv-deployer.git
