@@ -29,6 +29,7 @@ Item {
 			model: ListModel {
 				ListElement { url: "fire.mp4"; preview: "preview/fire.png"; }
 				ListElement { url: "sea.mp4"; preview: "preview/sea.png"; }
+				ListElement { url: "retro.mp4"; preview: "preview/retro.png"; }
 			}
 			delegate: Rectangle {
 				height: 100%;
