@@ -4,7 +4,7 @@ Item {
 	VideoPlayer {
 		id: player;
 		anchors.fill: parent;
-		source: "fire.mp4";
+		source: "https://github.com/comrat/fireplace/raw/content/videos/fire1.mp4";
 		autoPlay: true;
 		loop: true;
 	}
@@ -27,9 +27,9 @@ Item {
 			cssTranslatePositioning: true;
 			spacing: 10s;
 			model: ListModel {
-				ListElement { url: "fire.mp4"; preview: "preview/fire.png"; }
-				ListElement { url: "sea.mp4"; preview: "preview/sea.png"; }
-				ListElement { url: "retro.mp4"; preview: "preview/retro.png"; }
+				ListElement { url: "https://github.com/comrat/fireplace/raw/content/videos/fire1.mp4"; preview: "https://github.com/comrat/fireplace/raw/content/preview/fire1.png"; }
+				ListElement { url: "https://github.com/comrat/fireplace/raw/content/videos/fire2.mp4"; preview: "https://github.com/comrat/fireplace/raw/content/preview/fire2.png"; }
+				ListElement { url: "https://github.com/comrat/fireplace/raw/content/videos/fire3.mp4"; preview: "https://github.com/comrat/fireplace/raw/content/preview/fire3.png"; }
 			}
 			delegate: Rectangle {
 				height: 100%;
