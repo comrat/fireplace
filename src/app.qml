@@ -69,6 +69,10 @@ Item {
 			onTriggered: { this.parent.show = false }
 		}
 
+		onBackPressed: {
+			_globals.closeApp()
+		}
+
 		showControls: {
 			this.show = true
 			displayTimer.restart()
