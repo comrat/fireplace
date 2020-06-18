@@ -8,7 +8,7 @@
 			"site": "https://pureqml.com"
 		},
 		"title": "fireplace",
-		"domain": "com.pureqml.mosaicdemo",
+		"iconColor": "#8c8c8c",
 		"resolutionWidth": 1280,
 		"virtual.width": 1280,
 		"resolutionHeight": 720,
