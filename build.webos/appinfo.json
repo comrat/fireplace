@@ -1,0 +1,17 @@
+{
+	"id": "com.fireplace.app",
+	"version": "1.0.0",
+	"vendor": "PureQML Team",
+	"type": "web",
+	"main": "index.html",
+	"title": "fireplace",
+	"bgColor": "#8c8c8c",
+	"bgImage": "preview.png",
+	"icon": "icon.png",
+	"largeIcon": "icon.png",
+	"resolution":"1280x720",
+	"iconColor": "#8c8c8c",
+	"splashBackground": "splash.png",
+	"disableBackHistoryAPI":true,
+	"uiRevision":1
+}
