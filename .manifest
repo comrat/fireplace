@@ -1,5 +1,5 @@
 {
-	"platforms": ["web"],
+	"platforms": ["web", "webos", "tizen"],
 	"properties": {
 		"author": {
 			"name": "PureQML Team",
