@@ -40,11 +40,18 @@ Item {
 				color: "red";
 				radius: 10s;
 				clip: true;
+				border.color: "#424242";
+				border.width: delegateMixin.value && model.index != parent.currentIndex ? 5s : 0;
+				border.type: Border.Outer;
+
+				HoverClickMixin { id: delegateMixin; }
 
 				Image {
 					anchors.fill: parent;
 					source: model.preview;
 				}
+
+				onClicked: { this.parent.currentIndex = model.index }
 			}
 
 			onSelectPressed: {
