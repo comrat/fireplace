@@ -1,6 +1,8 @@
 Item {
 	anchors.fill: context;
 
+	ClickMixin { }
+
 	VideoPlayer {
 		id: player;
 		anchors.fill: parent;
@@ -10,6 +12,7 @@ Item {
 	}
 
 	Rectangle {
+		id: osd;
 		property bool show;
 		width: 100%;
 		height: 200s;
@@ -80,4 +83,6 @@ Item {
 
 		Behavior on opacity { Animation { duration: parent.parent.animationDuration; easing: parent.parent.animationEasing; } }
 	}
+
+	onClicked: { osd.showControls() }
 }
