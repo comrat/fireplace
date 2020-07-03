@@ -59,6 +59,8 @@ Item {
 			}
 
 			onKeyPressed: {
+				if (key == "Back")
+					return false
 				this.parent.showControls()
 			}
 		}
@@ -79,16 +81,20 @@ Item {
 			onTriggered: { this.parent.show = false }
 		}
 
-		onBackPressed: {
-			_globals.closeApp()
-		}
-
 		showControls: {
 			this.show = true
 			displayTimer.restart()
 		}
 
 		Behavior on opacity { Animation { duration: parent.parent.animationDuration; easing: parent.parent.animationEasing; } }
+	}
+
+	onBackPressed: {
+		var os = this._context.system.os.toLowerCase()
+		if (os == "webos")
+			_globals.platformBack()
+		else
+			_globals.closeApp()
 	}
 
 	onClicked: { osd.showControls() }
