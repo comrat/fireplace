@@ -10,6 +10,7 @@ Item {
 	}
 
 	Rectangle {
+		id: themesList;
 		property bool show;
 		width: 100%;
 		height: 200s;
@@ -45,7 +46,8 @@ Item {
 			}
 
 			onSelectPressed: {
-				player.source = this.model.get(this.currentIndex).url
+				if (themesList.show)
+					player.source = this.model.get(this.currentIndex).url
 			}
 
 			onKeyPressed: {
