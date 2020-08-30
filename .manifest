@@ -7,6 +7,7 @@
 			"organization": "PureQML",
 			"site": "https://pureqml.com"
 		},
+		"domain": "app.fireplace.tv",
 		"title": "fireplace",
 		"iconColor": "#795548",
 		"resolutionWidth": 1280,
