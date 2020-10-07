@@ -1,4 +1,6 @@
 Item {
+	id: root;
+	property string baseUrl: "https://comrat.github.io/fireplace/videos";
 	anchors.fill: context;
 
 	ClickMixin { }
@@ -6,7 +8,7 @@ Item {
 	VideoPlayer {
 		id: player;
 		anchors.fill: parent;
-		source: "http://aapobeis.beget.tech/fireplace/videos/fire1/index.m3u8";
+		source: "https://comrat.github.io/fireplace/videos/fire1/index.m3u8";
 		autoPlay: true;
 		loop: true;
 	}
@@ -30,9 +32,9 @@ Item {
 			cssTranslatePositioning: true;
 			spacing: 10s;
 			model: ListModel {
-				ListElement { url: "http://aapobeis.beget.tech/fireplace/videos/fire1/index.m3u8"; preview: "https://github.com/comrat/fireplace/raw/content/preview/fire1.png"; }
-				ListElement { url: "http://aapobeis.beget.tech/fireplace/videos/fire2/index.m3u8"; preview: "https://github.com/comrat/fireplace/raw/content/preview/fire2.png"; }
-				ListElement { url: "http://aapobeis.beget.tech/fireplace/videos/fire3/index.m3u8"; preview: "https://github.com/comrat/fireplace/raw/content/preview/fire3.png"; }
+				ListElement { url: "https://comrat.github.io/fireplace/videos/fire1/index.m3u8"; preview: "https://github.com/comrat/fireplace/raw/content/preview/fire1.png"; }
+				ListElement { url: "https://comrat.github.io/fireplace/videos/fire2/index.m3u8"; preview: "https://github.com/comrat/fireplace/raw/content/preview/fire2.png"; }
+				ListElement { url: "https://comrat.github.io/fireplace/videos/fire3/index.m3u8"; preview: "https://github.com/comrat/fireplace/raw/content/preview/fire3.png"; }
 			}
 			delegate: Rectangle {
 				height: 100%;
