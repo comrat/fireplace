@@ -53,12 +53,14 @@ Item {
 					source: model.preview;
 				}
 
-				onClicked: { this.parent.currentIndex = model.index }
+				onClicked: {
+					this.parent.currentIndex = model.index
+					this.parent.playIndex(model.index)
+				}
 			}
 
-			onSelectPressed: {
-				player.source = this.model.get(this.currentIndex).url
-			}
+			playIndex(idx): { player.source = this.model.get(idx).url }
+			onSelectPressed: { this.playIndex(this.currentIndex) }
 
 			onKeyPressed: {
 				if (key == "Back")
