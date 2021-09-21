@@ -35,6 +35,7 @@ Item {
 				ListElement { url: "https://comrat.github.io/fireplace/videos/fire1/index.m3u8"; preview: "https://github.com/comrat/fireplace/raw/content/preview/fire1.png"; }
 				ListElement { url: "https://comrat.github.io/fireplace/videos/fire2/index.m3u8"; preview: "https://github.com/comrat/fireplace/raw/content/preview/fire2.png"; }
 				ListElement { url: "https://comrat.github.io/fireplace/videos/fire3/index.m3u8"; preview: "https://github.com/comrat/fireplace/raw/content/preview/fire3.png"; }
+				ListElement { url: "http://185.57.68.33:8091/232/tracks-v1a1/index.m3u8"; preview: "https://github.com/comrat/fireplace/raw/content/preview/fire4.png"; }
 			}
 			delegate: Rectangle {
 				height: 100%;
